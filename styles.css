@@ -43,6 +43,49 @@ body {
     position: relative;
 }
 
+li{
+    flex: 1 1;
+    background-color: white;
+    border: 2px solid #b3d7ea;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    padding: 8px 15px;
+    margin-bottom: 5px;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+ul{
+    list-style-type: none;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+li:hover{
+    color: pink;
+    transform: translateX(5px);
+}
+ul,ol{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    list-style-type: none;
+    margin-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    
+}
+.block{
+    flex: 1 1 200px; /* grow, shrink, base */
+    height: 150px;
+    border-radius: 12px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
 /* Background Image with Transparency */
 /* need position: fixed; and top: 0; left: 0; */
 body:before {
@@ -55,6 +98,6 @@ body:before {
     background-image: url('background.jpg');
     background-size: cover;
     background-position: center;
-    opacity: 0.1;
+    opacity: 0.35;
     z-index: -1;
 }
